@@ -1,0 +1,68 @@
+Problem
+
+One to many relationship
+Consider a person who has multiple mobile numbers, that forms a one to many relationship. One to many relationship comes to play in our application when for one event type there will be many events. A one to one relationship wouldn't be handy for that scenario. Let's implement one to many relationship for a similar scenario that deals with the grouping of events in accordance with the event type.
+
+Write a Java program to create a one to many relationships between two classes.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create an Event class with the following private attributes
+
+Attributes	Datatype
+name	String
+detail	String
+type	String
+organiserName	String
+ 
+
+Create an EventType class with the following private attributes
+
+Attributes	Datatype
+name	String
+list	ArrayList<Event>
+ 
+
+Include appropriate getters, setters, default and Parameterised constructor for both classes.
+
+Create  an EventTypeBO class with the following methods
+
+Method	Description
+public void display(ArrayList<EventType> list)	This method accepts an ArrayList of EventType objects as an argument.
+It prints details of the EventType objects
+
+Create a driver class called Main, obtain input Event details from the input.
+Maintain an ArrayList of EventType objects.
+In accordance with the eventType input, add the event object to the list(ArrayList attribute of the EventType object) of the corresponding EventType object in the List(ArrayList of EventType objects in driver class).
+At last display the eventType name and its corresponding Event details.
+
+Input and Output format:
+The first line of input consists of type of events which is in CSV format.
+The next line of input represent the number of events n.
+The next n lines of input represent the event details in the CSV format.(name,detail,type,organiserName)
+
+Output format:
+Use "%-20s%-20s%-20s\n" for formatting Event details.
+Refer to sample Input and Output for formatting specifications.
+
+Note: All text in bold corresponds to the input and rest corresponds to the output
+
+Sample Input and Output:
+
+Enter the type of events in CSV format
+Academics,Auction
+Enter the number of Events
+3
+Enter the Event 1 Details
+Book expo,Special sales,Academics,Mahesh
+Enter the Event 2 Details
+Painting,Art by JJ,Auction,J jegadeesh
+Enter the Event 3 Details
+Spell bee,competition,Academics,Ganesh
+Event Type:Academics
+Name                Detail              Organiser Name
+Book expo           Special sales       Mahesh         
+Spell bee           competition         Ganesh         
+Event Type:Auction
+Name                Detail              Organiser Name
+Painting            Art by JJ           J jegadeesh
