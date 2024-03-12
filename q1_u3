@@ -1,0 +1,72 @@
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+Problem
+
+One to One relationship(Uni-directional)
+In Object-Oriented programming, an Object communicates to other Objects to use functionality and services provided by that object. Have you wondered how an object of a class is an attribute of another one?. That is called a Relationship between two. Why am I going to use that? that's what we are going to see now. In real-time certain domain has one to one relationships with others. For example, a passport belongs to only one citizen.
+
+Now refer the Schema for User class, it has an attribute Contact details in it. Instead of using all the attributes in a single class, we distinguish separate domains into different classes(Like address, Contact detail).
+
+A Contact detail belongs to a single user. So they form a one to one(uni-directional) relationship. Let's try it out.  
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create a class named User having private attributes
+Attributes	Datatype
+name	String
+username	String
+password	String
+contactDetail	ContactDetail
+
+Create a class named ContactDetail having private attributes
+Attributes	Datatype
+mobile	String
+alternateMobile	String
+landLine	String
+email	String
+address	String
+
+Include getter and setters for all attributes in both the classes
+Include default and parameterized constructors for both the classes in the following order
+User(String name, ContactDetail contactDetail, String username,String password)
+ContactDetail(String mobile, String alternateMobile,String landLine, String email, String address)
+
+Override toString() method in both the classes to match the output format requirement.
+
+Create a driver class called Main. In the Main method, obtain input from the user and display all the details.
+
+Return contact details in toString() method of User class.
+
+Input format:
+The input CSV format for User details is name,username,password
+The input CSV format for Contact details is mobile,alternateMobile,landLine,email,address
+
+Output format:
+Refer to sample Input and Output for formatting specifications.
+
+Sample Input and Output:
+[All text in bold corresponds to the input and rest corresponds to output]
+
+Enter the User detail
+Ganesh Ram,Ram,ram@123
+Enter the contact details
+9874563210,7897897897,044-1234567,ramg@abc.in,22nd street kk nagar
+Name:Ganesh Ram
+Username:Ram
+Password:ram@123
+Contact detail:
+Mobile:9874563210
+Alternate mobile:7897897897
+LandLine:044-1234567
+Email:ramg@abc.in
+Address:22nd street kk nagar
