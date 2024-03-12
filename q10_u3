@@ -1,1 +1,73 @@
+Problem
 
+Overriding-simple
+
+Overriding is another concept that every application developer should know. Overriding is a runtime polymorphism. The inherited class has the overridden method which has the same name as the method in the parent class. The argument number, types or return types should not differ in any case. The method is invoked with the object of the specific class ( but  with the reference of the parent class).
+
+Now let's try out a simple overriding concept in our application. For this, we can take our original example of Class Event, and its child classes Exhibition and StageEvent.
+
+Create a parent class Event with following protected attributes,
+
+Attributes	Datatype
+name	String
+detail	String
+ownerName	String
+
+Then create child class Exhibition that extends Event with the following attribute,
+
+Attributes	Datatype
+noOfStall	Integer
+
+And create another child class StageEvent that extends Event with the following attribute,
+
+Attributes	Datatype
+noOfShows	Integer
+noOfSeatsPerShow	Integer
+
+Add suitable constructor (with super() if necessary) and getters/setters for the classes. Add method projectedRevenue() in parent and its child class.
+
+Method	Description
+public Double projectedRevenue()	calculate revenue and return the double value. In parent class return just 0.0
+
+Note: For Exhibition, each stall will produce Rs.10000 as revenue. For StageEvent, each seat produces Rs.50 revenue.
+
+Refer sample input/output for other further details and format of the output.
+
+[All Texts in bold corresponds to the input and rest are output]
+Sample Input/Output 1:
+
+Enter the name of the event:
+Science Fair
+Enter the detail of the event:
+Explore Technology
+Enter the owner name of the event:
+ABCD
+Enter the type of the event:
+1.Exhibition
+2.StageEvent
+1
+Enter the number of stalls:
+65
+The projected revenue of the event is 650000.0
+
+Sample Input/Output 2:
+
+Enter the name of the event:
+Magic Show
+Enter the detail of the event:
+See Magic without Logic
+Enter the owner name of the event:
+SDFG
+Enter the type of the event:
+1.Exhibition
+2.StageEvent
+2
+Enter the number of shows:
+10
+Enter the number of seats per show:
+100
+The projected revenue of the event is 50000.0
+
+ 
+
+ 
