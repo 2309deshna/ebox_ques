@@ -1,0 +1,90 @@
+
+One To Many(Remove User)
+An admin should have access to add, delete or modify data. Yeah, you are the admin of our application. So you should possess features like searching, adding and deleting. We have done adding, so let's try deleting a User object.
+
+Obtain user and hall details from the user and create classes the same as the previous problem. At last get the Username to delete, perform delete operation and display the consolidated list of the user along with their Hall details.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create a class User with the following private attributes
+
+Attributes	Datatype
+name	String
+contactNumber	String
+hallList	List<Hall>
+Include appropriate getters and setters.
+Create a default constructor and a parameterized constructor with arguments in order User(String name, String contactNumber).
+In the constructor initialize an empty ArrayList to hallList.
+
+Include the following public method in the User class.
+
+Method	Description
+void addToHallList(Hall hall)	This method takes hall object as
+parameter and adds the hall
+into the hall list
+
+Create a class Hall with the following private attributes
+
+Attributes	Datatype
+name	String
+costPerDay	Integer
+ownerName	String
+Create default constructor and a parameterized constructor with arguments in order Hall(String name, Integer costPerDay, String ownerName).
+Include appropriate getters and setters.
+
+Create a driver class called Main. In the main method get the user details and the hall details as in CSV format, Split the values and set the values using setter methods of the respective class by creating the objects.
+
+Input Format
+The first line of the input corresponds to the total number of Users 'n'.
+The next 'n' line of input contains User details (name and contactNumber) separated by a comma[,]).
+The next input corresponds to the total number of Halls 'm'.
+The next 'm' lines of input contain Hall details (name,cost per day and owner name) separated by commas [,]).
+The next input corresponds to the username to be removed.
+Refer to sample input for formatting specifications.
+
+Output Format
+The output consists of the username and list of halls for the user. If the user list is null after deletion, then print "No users are there".
+If the halls for the user is null, then print "No halls are available".
+Refer to sample output for formatting specifications.
+
+Create a driver class named Main to test the above class.
+
+Note: All text in bold corresponds to input and rest corresponds to output]
+
+Sample Input and Output 1:
+Enter the number of users:
+3
+Enter the user details in comma separated(Name,Contact Number)
+Stanly,989409484
+Manic,1343454
+Jessie,232347
+Enter the number of halls:
+3
+Enter the hall details in comma separated(Name,Cost per day,Owner Name)
+Blue Pearl,12000,Stanly
+Angel,3500,Zoomer
+Livert,4090,Jessie
+Enter the username to be deleted:
+Jessie
+Owner Name:Stanly
+Hall 1
+Name:Blue Pearl
+Cost per day:12000
+Owner Name:Manic
+No halls are available
+
+ 
+
+Sample Input and Output 2:
+Enter the number of users:
+1
+Enter the user details in comma separated(Name,Contact Number)
+Sharma,88977211
+Enter the number of halls:
+2
+Enter the hall details in comma separated(Name,Cost per day,Owner Name)
+Angel,3500,Zoomer
+Park Avenue,5000,Sharma
+Enter the username to be deleted:
+Sharma
+No users are there
