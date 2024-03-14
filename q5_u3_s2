@@ -1,0 +1,96 @@
+Problem
+
+Interface - Search hotels
+ Create a prototype of an online hotel booking app. It is common for any hotel booking app to display tariff details for any queried city. Create an interface called HotelTariff that defines the showTariff method that should be overridden by any classes that implement it. Follow the instruction below and create the console application as per the specification.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create an interface HotelTariff with the following method
+
+Method	Description
+void showTariff(String city)	abstract method
+
+Create a class MakeMyTrip which implements HotelTariff with following methods
+
+Method	Description
+Map<String, Map<String, Long>> getHotels()	This static method returns a map of the city with corresponding
+hotels and their cost.
+void displayCities()	This method displays the city list for a particular guide.
+void showTariff(String city)	This method takes the city as an argument and
+prints the hotels and their cost.
+
+Create a class Trivago which implements HotelTariff with following methods
+
+Method	Description
+Map<String, Map<String, Long>> getHotels()	This static method returns a static
+map of a city with corresponding
+hotels and their cost.
+void displayCities()	This method displays the city list for a
+particular guide.
+void showTariff(String city)	This method takes the city as parameter and
+prints the hotels and their cost.
+
+Create a class ClearTrip which implements HotelTariff with following methods
+
+Method	Description
+Map<String, Map<String, Long>> getHotels()	This static method returns a static map of the city with corresponding hotels and their cost.
+void displayCities()	This method displays the city list for a particular guide.
+void showTariff(String city)	This method takes the city as an argument and prints the hotels and their cost.
+If there is no hotel in such city the print “No hotels are available for this city”
+
+Create a driver class named Main to test the above class.
+
+Input Format:
+The first input corresponds to choose the guide.
+The next line of input corresponds to the city name which you have to display the hotels with their cost.
+Refer to sample input for formatting specifications.
+
+Output Format: 
+Print “Invalid Choice” if, choose the guide is invalid.
+The output consists of hotels with their cost.
+Refer to Sample Input and output for formatting specifications.
+
+Note: All Texts in bold corresponds to the input and rest are output
+
+Sample Input and Output 1:
+
+Choose the guide
+1)Make My Trip
+2)Trivago
+3)Clear Trip
+1
+Cities:
+Mumbai
+Coimbatore
+Hyderabad
+Enter city where you want to search for hotels:
+Hyderabad
+Ecludia-80000
+Angel Park-20000
+Le Meridian-15000
+
+Sample Input and Output 2:
+
+Choose the guide
+1)Make My Trip
+2)Trivago
+3)Clear Trip
+3
+Cities:
+California
+Massachusetts
+Namibia
+Enter city where you want to search for hotels:
+Gudoor
+No hotels are available for this city
+
+Sample Input and Output 3:
+
+Choose the guide
+1)Make My Trip
+2)Trivago
+3)Clear Trip
+5
+Invalid Choice
+
+ 
