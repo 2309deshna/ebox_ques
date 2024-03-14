@@ -1,0 +1,83 @@
+Problem
+
+Abstract Event
+Let's have a practice in creating an Abstract class for the Event. In this application create an abstract class Event, StageEvent class and a class Exhibition with the provided attributes and let's implement an abstract method to calculate the total cost of the event and print the details of the particular event of this application.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create an abstract class called Event with following protected attributes.
+Attributes	Datatype
+name	String
+detail	String
+type	String
+organiser	String
+
+Include the following abstract method in the class Event.
+Method 	Description
+abstract Double calculateAmount()	an abstract method
+
+Create a class named Exhibition which extends Event class with the following private attributes
+Attributes	Datatype
+noOfStalls	Integer
+ rentPerStall	Double
+
+Include the following abstract method in the class Exhibition.
+Method 	Description
+Double calculateAmount ()	This method returns the product of noOfStalls and rentPerStall
+
+Create a class named StageEvent which extends Event class with the following private attributes.
+Attribute	Datatype
+noOfShows	Integer
+costPerShow	Double
+
+Include the following abstract method in the class StageEvent.
+Method 	 Description
+Double calculateAmount()	This method returns the product of noOfShows and costPerShow
+Include appropriate getters and setters for all the classes.
+create a default constructor and parameterized constructor for all the classes.
+
+The format for Parameterized constructors:
+public Event(String name, String detail, String type, String organiserName)
+public Exhibition(String name, String detail, String type,String organiser,Integer noOfStalls,Double rentPerStall)
+public StageEvent(String name, String detail, String type,String organiser,Integer noOfShows,Double costPerShow)
+
+Create a driver class called Main. In the Main method, obtain input from the user and create objects accordingly.
+
+Input format:
+Input format for Exhibition is in the CSV format (name,detail,type,organiser,noOfStalls,rentPerStall)
+Input format for StageEvent is in the CSV format (name,detail,type,organiser,noOfShows,costPerShow)    
+
+Output format:
+Print "Invalid choice" if the input is invalid to our application and terminate.
+Display one digit after the decimal point for Double datatype.
+Refer to sample Input and Output for formatting specifications.
+
+Note: All text in bold corresponds to the input and rest corresponds to output.
+
+Sample Input and output 1:
+Enter your choice
+1.Exhibition
+2.StageEvent
+1
+Enter the details in CSV format
+Book expo,Special sale,Academics,Mahesh,100,1000
+Exhibition Details
+Event Name:Book expo
+Detail:Special sale
+Type:Academics
+Organiser Name:Mahesh
+Total Cost:100000.0
+
+Sample Input and Output 2:
+Enter your choice
+1.Exhibition
+2.StageEvent
+2
+Enter the details in CSV format
+JJ magic show,Comedy magic,Entertainment,Jegadeesh,5,1000
+Stage Event Details
+Event Name:JJ magic show
+Detail:Comedy magic
+Type:Entertainment
+Organiser Name:Jegadeesh
+Total Cost:5000.0
