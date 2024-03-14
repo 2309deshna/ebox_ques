@@ -1,0 +1,79 @@
+Problem
+
+Abstract Class - Introduction
+
+Abstract classes are declared with a keyword abstract. These classes cannot be instantiated. They can have attributes/methods. They can have normal methods as well as abstract methods. These abstract methods must be implemented in subclasses or else they should also be declared as abstract. Now let's get on with implementing this newly learned concept in a simple program, before going to our application.
+
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+
+Create an abstract class Shape with abstract method public abstract Double calculatePerimeter()
+
+Create a class Circle that extends Shape with the following private attributes,
+
+Attribute	Datatype
+radius	Float
+Include appropriate getters and setters, constructors for the class.
+
+Create a class Rectangle that extends Shape with the following private attributes,
+
+Attribute	Datatype
+length	Float
+breadth	Float
+Include appropriate getters and setters, constructors for the class.
+
+Create a class Square that extends Shape with the following private attributes,
+
+Attribute	Datatype
+side	Float
+Include appropriate getters and setters, constructors for the class.
+
+Implement the method calculatePerimeter() in all the child classes to calculate appropriate perimeters.
+
+Note: Use 3.14 for pi value
+
+Input and Output format:
+Display the double value correct to 2 decimal place
+Refer to sample Input and Output for formatting specifications.
+
+[All Texts in bold corresponds to the input and rest are output]
+Sample Input and Output 1:
+
+List of Shapes:
+1.Circle
+2.Rectangle
+3.Square
+Enter your choice:
+1
+Enter the radius of the Circle:
+2.34
+The perimeter is 14.70
+
+Sample Input and Output 2:
+
+List of Shapes:
+1.Circle
+2.Rectangle
+3.Square
+Enter your choice:
+2
+Enter the length of the Rectangle:
+12
+Enter the breadth of the Rectangle:
+3
+The perimeter is 30.00
+
+Sample Input and Output 3:
+
+List of Shapes:
+1.Circle
+2.Rectangle
+3.Square
+Enter your choice:
+3
+Enter the side of the Square:
+13
+The perimeter is 52.00
+
+ 
