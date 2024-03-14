@@ -1,0 +1,189 @@
+Problem
+
+Interface
+
+The Interface defines a rule that any classes that implement it should override all the methods. Let's implement Interface in our application. We'll start simple, by including display method in the Stall interface. Now all types of stalls that implement the interface should override the method.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create an interface Stall  with the following method
+
+Method
+
+Description
+
+void display()
+
+abstract method.
+
+
+Create a class GoldStall which implements Stall interface with the following private attributes
+
+Attribute
+
+Datatype
+
+stallName
+
+String
+
+cost
+
+Integer
+
+ownerName
+
+String
+
+tvSet
+
+Integer
+
+Create default constructor and a parameterized constructor with arguments in order GoldStall(String stallName, Integer cost, String ownerName, Integer tvSet).
+Include appropriate getters and setters.
+
+Include the following method in the class GoldStall
+
+Method
+
+Description
+
+void display()
+
+To display the stall name, cost of the stall, owner name and the number of tv sets.
+
+
+Create a class PremiumStall which implements Stall interface with following private attributes
+
+Attribute
+
+Datatype
+
+stallName
+
+String
+
+cost
+
+Integer
+
+ownerName
+
+String
+
+projector
+
+Integer
+
+Create default constructor and a parameterized constructor with arguments in order PremiumStall(String stallName, Integer cost, String ownerName, Integer projector).
+Include appropriate getters and setters.
+
+Include the following method in the class PremiumStall.
+
+Method
+
+Description
+
+void display()
+
+To display the stall name, cost of the stall, owner name and the number of projectors.
+
+
+Create a class ExecutiveStall which implements Stall interface with following private attributes
+
+Attribute
+
+Datatype
+
+stallName
+
+String
+
+cost
+
+Integer
+
+ownerName
+
+String
+
+screen
+
+Integer
+
+Create default constructor and a parameterized constructor with arguments in order ExecutiveStall(String stallName, Integer cost, String ownerName, Integer screen).
+Include appropriate getters and setters.
+
+Include the following method in the class ExecutiveStall.
+
+Method
+
+Description
+
+void display()
+
+To display the stall name, cost of the stall, owner name and the number of screens.
+
+
+Create a driver class named Main to test the above class.
+
+Input Format:
+The first input corresponds to choose the stall type.
+The next line of input corresponds to the details of the stall in CSV format according to the stall type.
+
+Output Format:
+Print “Invalid Stall Type” if the user has chosen the stall type other than the given type
+Otherwise, display the details of the stall.
+Refer to sample output for formatting specifications.
+
+Note: All Texts in bold corresponds to the input and rest are output
+
+Sample Input and Output 1:
+
+Choose Stall Type
+1)Gold Stall
+2)Premium Stall
+3)Executive Stall
+1
+Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of TV sets)
+The Mechanic,120000,Johnson,10
+Stall Name:The Mechanic
+Cost:120000.Rs
+Owner Name:Johnson
+Number of TV sets:10
+
+Sample Input and Output 2:
+
+ChooseStall Type
+1)Gold Stall
+2)Premium Stall
+3)Executive Stall
+2
+Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Projectors)
+Knitting plaza,300000,Zain,20
+Stall Name:Knitting plaza
+Cost:300000.Rs
+Owner Name:Zain
+Number of Projectors:20
+
+Sample Input Output 3:
+
+ChooseStall Type
+1)Gold Stall
+2)Premium Stall
+3)Executive Stall
+3
+Enter Stall details in comma separated(Stall Name,Stall Cost,Owner Name,Number of Screens)
+Fruits Hunt,10000,Uber,7
+Stall Name:Fruits Hunt
+Cost:10000.Rs
+Owner Name:Uber
+Number of Screens:7
+
+Sample Input Output 4:
+
+ChooseStall Type
+1)Gold Stall
+2)Premium Stall
+3)Executive Stall
+4
